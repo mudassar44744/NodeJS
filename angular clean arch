@@ -1,0 +1,114 @@
+Great catch! You're right — your original post mentioned state management (NgRx, Signals, RxJS), but the folder structure didn’t include a dedicated `store/` directory.
+
+Let’s fix that and give you a **clean, complete, and visually structured version** of the post with `store/` included — while keeping it polished for LinkedIn.
+
+---
+
+### 🧱 Clean Architecture for Scalable Angular Apps 🔥
+
+**“Structure your Angular codebase like a pro.”**
+
+When you're building production-grade Angular applications, **scalability, modularity, and maintainability** aren't optional—they're essential.
+
+Here’s a **proven folder structure and architectural strategy** I use in real-world Angular projects to keep code clean, testable, and ready to scale:
+
+---
+
+### 🔍 Core Architectural Principles
+
+✅ **core/** – App-wide Essentials
+Global services, guards, interceptors, models, constants, and utility logic.
+
+✅ **shared/** – Reusable UI Components
+Common UI like buttons, modals, pipes, directives, and shared Angular modules.
+
+✅ **features/** – Domain Modules
+Each domain (e.g., `auth`, `dashboard`, `products`) is modularized with its own components, services, models, and routing.
+
+✅ **routes/** – Centralized Routing
+Defines the top-level routes and handles lazy loading for feature modules.
+
+✅ **layout/** – Application Shell
+Includes structural UI like navbars, sidebars, headers, and layout wrappers.
+
+✅ **store/** – Scalable State Management
+Handles global and feature-level state using **NgRx**, **Signals**, or **RxJS**. Keeps state logic centralized and consistent.
+
+✅ **Styling System** – SCSS Modules + Global Theming
+A consistent visual system using:
+
+* `styles/variables.module.scss`
+* `styles/global.scss`
+
+✅ **Testing-First Development**
+Use **Jasmine** and **Karma** for unit testing services, components, and business logic.
+
+---
+
+### 📁 Recommended Folder Structure
+
+```
+src/
+├── --app/
+│   ├── --core/
+│   │   ├── --services/
+│   │   ├── --interceptors/
+│   │   ├── --guards/
+│   │   ├── --models/
+│   │   ├── --utils/
+│   │   └── --constants/
+│   ├── --shared/
+│   │   ├── --components/
+│   │   ├── --pipes/
+│   │   ├── --directives/
+│   │   └── --modules/
+│   ├── --features/
+│   │   ├── --auth/
+│   │   │   ├── --components/
+│   │   │   ├── --pages/
+│   │   │   ├── --services/
+│   │   │   ├── --models/
+│   │   │   ├── --store/
+│   │   │   ├── auth.module.ts
+│   │   │   └── auth-routing.module.ts
+│   │   ├── --dashboard/
+│   │   └── --products/
+│   ├── --routes/
+│   ├── --layout/
+│   │   ├── --components/
+│   │   └── --containers/
+│   ├── --store/                # Global state, selectors, actions, reducers
+│   │   ├── --selectors/
+│   │   ├── --reducers/
+│   │   ├── --effects/
+│   │   └── --actions/
+│   ├── app.component.ts
+│   ├── app.module.ts
+│   └── app-routing.module.ts
+├── --assets/
+├── --styles/
+│   ├── variables.module.scss
+│   └── global.scss
+└── index.html
+```
+
+---
+
+### 💡 Why It Matters:
+
+✅ Clean separation of UI, logic, and infrastructure
+✅ Consistent and scalable state management
+✅ Better testability and maintainability
+✅ Smooth onboarding for new developers
+✅ Designed for large teams and enterprise-scale apps
+
+---
+
+If you're building serious Angular applications — Clean Architecture is the foundation that will help you move fast **without breaking things** 💪
+
+Let’s write Angular that scales 🔥
+\#Angular #WebDevelopment #FrontendArchitecture #CleanCode #ScalableApps #NgRx #Signals #TypeScript
+
+---
+
+Would you like me to turn this into a **LinkedIn carousel post** or design a **PDF template** for visual sharing? It could boost your engagement big time.
